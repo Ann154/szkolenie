@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: pozycjonuje elementy na osi X, moze przyjac rozne wartosci: space-between, space-around, space-evenly, center */
+  align-items: center;
+  /*  align-items: pozycjonuje elementy na osi Y, moze przyjac rozne wartosci: space-between, space-around, space-evenly, center 
+    nalezy pamiętać, że aby pozycjonować elementy na osi Y, container musi mieć wysokosć większą od wysokości nadanej przez 
+    wysokosc elementów które przechowuje */
+  height: 80px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  margin-left: 20px;
+}
+
+/* SEKCJA FILMS/CARDS */
+
+.films {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.film {
+  width: 300px;
+  padding: 32px 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+}
+
+.film h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+#potterId {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: blue;
+}
+
+/* .film span {
+  color: red;
+} */
+
+/* .film h2 span {
+  color: red;
+} */
+
+/* h2 span {
+  color: red;
+} */
+
+.film p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.film img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 220px;
+  margin-bottom: 6px;
+}
+
+.film a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+/* 
+asterisk * = selektor ogólny
+selektor typu - wybierz wszystkie elementy danego typu 
+.nazwaKlasy - selektor klasy 
+selektor potomka = SPACJA
+selektor by Id = #idValue
+*/
